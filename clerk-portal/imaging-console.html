@@ -1,0 +1,1520 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>    Dashboard    </title>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="4LhcXi2pnwDpU9dzBePvhSLNmbYb0X5s3fmYxKOG">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="./assets/css/app.css">
+
+    <script type='text/javascript'>
+		window.__lo_site_id = 113739;
+
+	(function() {
+		var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+		wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+	  })();
+	</script>
+    <link rel="stylesheet"
+          href="./assets/css/skin-blue.min.css ">
+
+    <link rel="stylesheet" href="./assets/css/import.css">
+        
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini ">
+    <div class="wrapper">
+
+        <!-- Main Header -->
+        <header class="main-header">
+                        <!-- Logo -->
+            <a href="http://162.243.169.226/admin/dashboard" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>B</b>L</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Best</b>Logistics</span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                            <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+
+                    <ul class="nav navbar-nav">
+                        <li>
+                                                            <a href="#"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                >
+                                    <i class="fa fa-fw fa-power-off"></i> Log Out
+                                </a>
+                                <form id="logout-form" action="http://162.243.169.226/logout" method="POST" style="display: none;">
+                                                                        <input type="hidden" name="_token" value="4LhcXi2pnwDpU9dzBePvhSLNmbYb0X5s3fmYxKOG">
+                                </form>
+                                                    </li>
+                    </ul>
+                </div>
+                            </nav>
+        </header>
+
+                <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="">
+        <a href="http://162.243.169.226/admin/dashboard"
+                   >
+            <i class="fa fa-fw fa-heartbeat "></i>
+            <span>Home</span>
+                    </a>
+            </li>
+<li class="treeview">
+        <a href="#"
+                   >
+            <i class="fa fa-fw fa-users "></i>
+            <span>Users</span>
+                            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                <li class="">
+        <a href="http://162.243.169.226/admin/users/customers"
+                   >
+            <i class="fa fa-fw fa-user "></i>
+            <span>Customers</span>
+                    </a>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/users/admins"
+                   >
+            <i class="fa fa-fw fa-address-book "></i>
+            <span>Admins</span>
+                    </a>
+            </li>
+            </ul>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/companies"
+                   >
+            <i class="fa fa-fw fa-building "></i>
+            <span>Companies</span>
+                    </a>
+            </li>
+<li class="treeview">
+        <a href="http://162.243.169.226/admin/carriers"
+                   >
+            <i class="fa fa-fw fa-building "></i>
+            <span>Carriers</span>
+                            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                <li class="">
+        <a href="http://162.243.169.226/admin/carriers"
+                   >
+            <i class="fa fa-fw fa-circle-o "></i>
+            <span>Carriers</span>
+                    </a>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/carriers/settings/option"
+                   >
+            <i class="fa fa-fw fa-circle-o "></i>
+            <span>Settings</span>
+                    </a>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/factorings"
+                   >
+            <i class="fa fa-fw fa-circle-o "></i>
+            <span>Factoring Companies</span>
+                    </a>
+            </li>
+            </ul>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/carrier/orders"
+                   >
+            <i class="fa fa-fw fa-folder "></i>
+            <span>Orders</span>
+                    </a>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/csr_groups"
+                   >
+            <i class="fa fa-fw fa-bookmark "></i>
+            <span>CSR Groups</span>
+                    </a>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/promotions"
+                   >
+            <i class="fa fa-fw fa-bell "></i>
+            <span>Promotions</span>
+                    </a>
+            </li>
+<li class="">
+        <a href="http://162.243.169.226/admin/supports"
+                   >
+            <i class="fa fa-fw fa-question "></i>
+            <span>Help Desk Support</span>
+                    </a>
+            </li>
+<li class="header">ACCOUNT SETTINGS</li>
+<li class="">
+        <a href="http://162.243.169.226/user/settings"
+                   >
+            <i class="fa fa-fw fa-user "></i>
+            <span>Profile</span>
+                    </a>
+            </li>
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                                                    <div class="row">
+        <div class="col-md-12">
+
+                <div class="box box-info">
+        <div class="box-header with-border">
+                <h3 class="pull-left">
+                Imaging Clerk Console
+        </h3>
+                        <div class="pull-right">
+                    </div><!-- /.box-tools -->
+            </div><!-- /.box-header -->
+        <div class="box-body">
+            
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <table class="table table-bordered" style="border-collapse:collapse;">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+
+                            <th scope="col">Type of Documents</th>
+                            <th scope="col">Order #</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Number of Pages</th>
+                
+                            <th scope="col">Carrier</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                  
+                            <tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                              <td>+</td>
+
+                               <td>
+
+                               
+                                                            Bill Of Lading
+
+                                                    
+                                                    <a href="#" style="margin-left: 10px;"><span class="badge label-success">+ 4</span></a><br> 
+
+                                </td>
+
+                                  <td>ray</td>
+
+                                <td>
+                                    17 Dec 2020
+
+                                </td>
+                                <td>2</td>
+                              
+                                <td>12</td>
+                            </tr>
+                            <tr class="p">
+                                <td colspan="6" class="hiddenRow">
+                                    <div class="accordian-body collapse p-3" id="demo1" style="padding: 50px;">
+
+                                        <div class="all">
+                                            <div class="col-md-12" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+                                        <a href="http://162.243.169.226/admin/imagingorder/ray"><button class="btn btn-danger" type="button" style="margin-top: 10px;">
+                                                View All <i class="fas fa-eye"></i>
+                                            </button>
+                                        </a>
+
+                                            </div>
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608208176carrier_signature_5fdb4f301a732.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/1"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                         <span style="color: #fff" class="label label-success">Approved</span>
+
+                                                    
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608208186carrier_signature_5fdb4f3aa7ebe.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/2"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                         <span style="color: #fff" class="label label-danger">Rejected</span>
+
+                                                    
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608209366carrier_signature_5fdb53d6ccbbf.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/3"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608209366carrier_signature_5fdb53d6d02ed.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/4"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                    
+                                    </div> 
+                                </td> 
+                            </tr>
+
+                                                                              
+                            <tr colspan="6" data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+                              <td>+</td>
+
+                               <td>
+
+                               
+                                                            Bill Of Lading
+
+                                                    
+                                                    <a href="#" style="margin-left: 10px;"><span class="badge label-success">+ 12</span></a><br> 
+
+                                </td>
+
+                                  <td>343434345</td>
+
+                                <td>
+                                    17 Dec 2020
+
+                                </td>
+                                <td>2</td>
+                              
+                                <td>12</td>
+                            </tr>
+                            <tr class="p">
+                                <td colspan="6" class="hiddenRow">
+                                    <div class="accordian-body collapse p-3" id="demo2" style="padding: 50px;">
+
+                                        <div class="all">
+                                            <div class="col-md-12" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+                                        <a href="http://162.243.169.226/admin/imagingorder/343434345"><button class="btn btn-danger" type="button" style="margin-top: 10px;">
+                                                View All <i class="fas fa-eye"></i>
+                                            </button>
+                                        </a>
+
+                                            </div>
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                         <span style="color: #fff" class="label label-danger">Rejected</span>
+
+                                                    
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608209399carrier_signature_5fdb53f71b864.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/5"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                         <span style="color: #fff" class="label label-success">Approved</span>
+
+                                                    
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608209399carrier_signature_5fdb53f71d68a.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/6"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608211510carrier_signature_5fdb5c36de75d.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/7"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                         <span style="color: #fff" class="label label-danger">Rejected</span>
+
+                                                    
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608211510carrier_signature_5fdb5c36dfae3.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/8"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608219463carrier_signature_5fdb7b470a57b.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/9"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608219463carrier_signature_5fdb7b470b7f4.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/10"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608219498carrier_signature_5fdb7b6a9b25c.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/11"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608219498carrier_signature_5fdb7b6a9c5a1.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/12"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608219498carrier_signature_5fdb7b6a9cdcb.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/13"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608646814carrier_signature_5fe2009e9e767.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/14"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608646814carrier_signature_5fe2009ea0262.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/15"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608646814carrier_signature_5fe2009ea1553.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/16"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                    
+                                    </div> 
+                                </td> 
+                            </tr>
+
+                                                                              
+                            <tr colspan="6" data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+                              <td>+</td>
+
+                               <td>
+
+                               
+                                                            Bill Of Lading
+
+                                                    
+                                                    <a href="#" style="margin-left: 10px;"><span class="badge label-success">+ 9</span></a><br> 
+
+                                </td>
+
+                                  <td>1299042</td>
+
+                                <td>
+                                    22 Dec 2020
+
+                                </td>
+                                <td>2</td>
+                              
+                                <td>12</td>
+                            </tr>
+                            <tr class="p">
+                                <td colspan="6" class="hiddenRow">
+                                    <div class="accordian-body collapse p-3" id="demo3" style="padding: 50px;">
+
+                                        <div class="all">
+                                            <div class="col-md-12" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+                                        <a href="http://162.243.169.226/admin/imagingorder/1299042"><button class="btn btn-danger" type="button" style="margin-top: 10px;">
+                                                View All <i class="fas fa-eye"></i>
+                                            </button>
+                                        </a>
+
+                                            </div>
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647037carrier_signature_5fe2017d7d0a7.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/17"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647037carrier_signature_5fe2017d7e76b.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/18"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647037carrier_signature_5fe2017d802d5.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/19"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647038carrier_signature_5fe2017edfa4b.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/20"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647038carrier_signature_5fe2017ee06c0.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/21"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647038carrier_signature_5fe2017ee138a.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/22"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                            Bill Of Lading
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647040carrier_signature_5fe2018049588.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/23"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                                                                        
+
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647040carrier_signature_5fe2018049f85.jpg" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/24"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                                                                
+                        
+                                            <div class="card col-md-3" style="width: 18rem;margin-left:30px;margin-top: 20px;margin-bottom: 20px;">
+
+                                                <h5 class="card-title" style="text-align: center;padding-top: 15px;">
+                                                    <b>
+                                                    
+                                                                                                        </b>
+
+                                                </h5>
+                                                   <p class="card-text" style="padding-top: 5px;text-align: center;">
+                                                    
+                                                     
+                                                        <span class="label label-default" style="color: #fff">UnProcessed</span>
+
+                                                     
+
+                                                </p>
+                                              <img class="card-img-top" src="http://162.243.169.226/storage/carrier_signature/1608647040carrier_signature_5fe201804abf3.png" style="padding:10px;width: 150px;" alt="Card image cap">
+                                              <div class="card-body" style="text-align: center;">
+                                                
+                                             
+                                                                                              <div clss>
+                                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Action
+                                                  </button>
+
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Download</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Change Image Type</a>
+                                                  </div>
+
+                                                     <a href="http://162.243.169.226/admin/imaging/25"><button class="btn btn-primary" type="button" style="margin-top: 10px;">
+                                                    Details <i class="fas fa-eye"></i>
+
+
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>     
+                                          
+                                    
+                                    </div> 
+                                </td> 
+                            </tr>
+
+                                                                              
+
+
+                    </tbody>
+                </table>
+    
+        <style>
+
+
+    tr.hide-table-padding td {
+      padding: 0;
+    }
+
+    .expand-button {
+        position: relative;
+    }
+
+    .accordion-toggle .expand-button:after
+    {
+      position: absolute;
+      left:.75rem;
+      top: 50%;
+      transform: translate(0, -50%);
+      content: '-';
+    }
+    .accordion-toggle.collapsed .expand-button:after
+    {
+      content: '+';
+    }
+
+    body{
+    background-color:#004C70 !important;
+}
+.table tr {
+    cursor: pointer;
+}
+.table{
+    background-color: #fff !important;
+}
+.hedding h1{
+    color:#fff;
+    font-size:25px;
+}
+.main-section{
+    margin-top: 120px;
+}
+.hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+    font-size: 13px;
+}
+
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+       $('.accordion-toggle').click(function(){
+    $('.hiddenRow').hide();
+    $(this).next('tr').find('.hiddenRow').show();
+});
+    </script>
+    </div><!-- /.box-body -->
+</div><!-- /.box -->        </div>
+    </div>
+
+            </section>
+            <!-- /.content -->
+                    </div>
+        <!-- /.content-wrapper -->
+
+    </div>
+    <!-- ./wrapper -->
+<script src="./assets/js/app.js"></script>
+            <script src="./assets/js/adminlte.min.js"></script>
+
+</body>
+</html>

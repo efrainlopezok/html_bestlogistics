@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- MAKE IT RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://demos.alkalab.com/woffice/allinone/xmlrpc.php">
+    <title>Documents - BestLogistics </title>
+    <link rel="dns-prefetch" href="//maps.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/import.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="inner-pad">
+            <div class="nav-logo">
+                <div class="logo-left">
+                    <img src="./assets/img/best-logistics-logo-inline-white.png" alt="Logo Image"> </a>
+                </div>
+                <span class="brand">BestLogistic Group<sup>®</sup></span>
+            </div>
+        </div>
+        
+        <ul class="dmain-menu">
+            <li>
+                <a href="./index.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </span> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="./orders.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-truck"></i>
+                    </span> Orders
+                </a>
+            </li>
+            <li class="active">
+                <a href="./documents.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </span> 
+                    Documents
+                </a>
+            </li>
+            <li>
+                <a href="./settings.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </span> 
+                    Settings
+                </a>
+            </li>
+            
+            <li>
+                <a href="notifications.html" class="nav-link"> 
+                    <span class="nav-icon"><i class="fas fa-bell"></i></span> 
+                    Notifications <span class="badge badge-secondary">4</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="inner-pad text-center">
+            <a href="javascript:;" class="btn btn-secondary d-block mb-2">Add LTL Order</a>
+            <a href="javascript:;" class="btn btn-secondary d-block">Add TL Order</a>
+        </div>
+    </nav>
+    
+    <div class="wrapper">
+        <header id="main-header" class="main-header">
+            <nav id="navbar" class="has_fixed_navbar animate-me" style="top: 0px;">
+                <div id="nav-left">
+                    <!-- NAVIGATION TOGGLE -->
+                    <div class="nav-left-l">
+                        <a href="javascript:void(0)" id="nav-trigger"><i class="fa fa-chevron-left"></i></a>
+                    </div>
+                    
+                    <!-- START LOGO -->
+                    <div id="nav-logo">
+                        <a href="./">
+                            <img src="./assets/img/best-logistics-logo-inline.png" alt="Logo Image"> </a>
+                        </div>
+                        
+                        <!-- USER INFORMATIONS -->
+                        <div id="nav-user" class="clearfix bp_is_active">
+                            <a href="javascript:void(0);" id="user-thumb">
+                                Hi <strong class="font-weight-bold">Joe</strong>!
+                                <img alt="" src="./assets/img/user.jpg" class="avatar avatar-96 photo" height="96" width="96">
+                            </a>
+                            
+                        </div>
+                    </div> <!-- /. nav-left -->
+                    
+                    <!-- EXTRA BUTTONS ABOVE THE SIDBAR -->
+                    <div id="nav-buttons" class="nav-buttons">
+                        <!-- SIDEBAR TOGGLE -->
+                        <a href="javascript:void(0)" id="nav-sidebar-trigger"><i class="fa fa-chevron-right" aria-haspopup="true" aria-hidden="true"></i></a>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" id="nav-notification-trigger" title="View your notifications" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="far fa-bell"></i>
+                                    <span class="badge badge-warning">4</span>
+                                </a>
+                                <!--  NOTIFICATIONS -->
+                                <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-246px, 64px, 0px);">
+                                    <form>
+                                        <!--begin: Head -->
+                                        <div class="kt-head kt-head--skin-dark kt-head--fit-x kt-head--fit-b" style="background-image: url(./assets/img/dpdn-hero.jpg)">
+                                            <h3 class="kt-head__title">
+                                                User Notifications
+                                                &nbsp;
+                                                <span class="btn btn-success btn-sm btn-bold btn-font-md">23 new</span>
+                                            </h3>
+                                            
+                                            <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-success kt-notification-item-padding-x" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_notifications" role="tab" aria-selected="true">Alerts</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Events</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Logs</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--end: Head -->
+                                        
+                                        <div class="tab-content">
+                                            <div class="tab-pane active show" id="topbar_notifications_notifications" role="tabpanel">
+                                                <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll ps ps--active-y" data-scroll="true" data-height="300" data-mobile-height="200" style="height: 300px; overflow: hidden;">
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-chart-line text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                2 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-box text-info"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New customer is registered
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-chart-pie text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                Application has been approved
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-file-image text-warning"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New file has been uploaded
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                5 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="far fa-comment-dots tex-info"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New user feedback received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                8 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-life-ring text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                System reboot has been successfully completed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                12 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-map-marked-alt text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been placed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                15 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+                                                <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll ps" data-scroll="true" data-height="300" data-mobile-height="200" style="height: 300px; overflow: hidden;">
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-file-image text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New report has been received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                23 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-download text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                Finance report has been generated
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                25 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="far fa-chart-bar text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                2 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-user-check"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New customer is registered
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-thumbs-up text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                Application has been approved
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-file-upload text-warning"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New file has been uploaded
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                5 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="far fa-comment-dots tex-info"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New user feedback received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                8 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-life-ring text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                System reboot has been successfully completed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                12 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-map-marked-alt text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been placed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                15 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="topbar_notifications_logs" role="tabpanel">
+                                                <div class="kt-grid kt-grid--ver" style="min-height: 200px;">
+                                                    <div class="kt-grid kt-grid--hor kt-grid__item kt-grid__item--fluid kt-grid__item--middle">
+                                                        <div class="kt-grid__item kt-grid__item--middle kt-align-center">
+                                                            All caught up!
+                                                            <br>No new notifications.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- ./ NOTIFICATIONS -->
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section id="main-content" class="main-content with-sidebar">
+                <aside id="right-sidebar" class="right-sidebar">
+                    
+                    <div class="intern-padding color-box">
+                        <ul class="arrow-list">
+                            <li><a href="">New Request</a></li>
+                            <li><a href="">Highlighted Carriers</a></li>
+                            <li><a href="">Shipping Map</a></li>
+                            <li><a href="">Freight Map</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="intern-padding">
+                        <h5>Suggested Carriers</h5>
+                        <img src="./assets/img/user.jpg" alt="" class="avatar-pic">
+                    </div>
+                    
+                    <div class="intern-padding color-box">
+                        <h5>How To</h5>
+                        <ul class="icon-list">
+                            <li>
+                                <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                                <a href="">How to integrate McLeod Logistics<span class="ml-2  badge badge-skyblue badge-pill">
+                                    <i class="fa fa-thumbs-up"></i> 5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                                <a href="">How to track freight with GPS<span class="ml-2  badge badge-skyblue badge-pill"><i
+                                    class="fa fa-thumbs-up"></i> 5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                                <a href="">Using escalation and advanced scheduling<span class="ml-2  badge badge-skyblue badge-pill"><i
+                                    class="fa fa-thumbs-up"></i> 5</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="intern-padding box-title">
+                        <h5>Recent Activity</h5>
+                        <ul class="icon-list">
+                            <li>
+                                <span class="l-icon"><i class="far fa-calendar-alt"></i></span>
+                                <a href="#">Request has been dispatched from San Antonio</a>
+                            </li>
+                            <li>
+                                <span class="l-icon"><i class="far fa-calendar-alt"></i></span>
+                                <a href="#">Request has been Picked Up in Asheville, NC</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- /. right-sidebar -->
+                
+                <div id="left-content" class="left-content">
+                    
+                    <!-- START THE CONTENT CONTAINER -->
+                    <div class="content-container">
+                        <!-- START CONTENT -->
+                        <div class="content">
+                            <!-- Documents -->
+                            <h2>Imaging Clerk Console</h2>
+                            <div class="row top-filters">
+                                <div class="col-xl-5 filter-l">
+                                    <div class="search-control">
+                                        <i class="fas fa-search"></i>
+                                        <input type="text" name="search" id="search" placeholder="Search">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <h5>Last Documents  <a href="./orders.html" class="btn btn-primary heading-btn float-sm-right"><i class="fa fa-plus" aria-hidden="true"></i> Add</a></h5>
+                            
+                            <div class="table-responsive">
+                                <table class="table document table-box mb-2">
+                                    <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Title</th>
+                                            <th>Short Description</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="cell-detail">
+                                                <span class="type-file">
+                                                    <i class="fas fa-file-word"></i>
+                                                </span>
+                                            </td>
+                                            <td class="cell-detail">
+                                                <a href="javascript:;">Document 1.docx</a>
+                                            </td>
+                                            <td class="cell-detail" width="50%">
+                                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                                            </td>
+                                            <td class="cell-detail">
+                                                <span class="date">09/25/2019</span>
+                                                <span class="cell-detail-description">08:00 am</span>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="cell-detail">
+                                                <span class="type-file">
+                                                    <i class="fas fa-file-powerpoint"></i>
+                                                    <span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <a href="javascript:;">Document 1.pptx</a>
+                                                    </td>
+                                                    <td class="cell-detail" width="50%">
+                                                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <span class="date">04/25/2019</span>
+                                                        <span class="cell-detail-description">08:00 pm</span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                                <tr>
+                                                    <td class="cell-detail">
+                                                        <span class="type-file">
+                                                            <i class="fas fa-file-word"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <a href="javascript:;">Document 2.docx</a>
+                                                    </td>
+                                                    <td class="cell-detail" width="50%">
+                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <span class="date">09/25/2019</span>
+                                                        <span class="cell-detail-description">08:00 am</span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="cell-detail">
+                                                        <span class="type-file">
+                                                            <i class="fas fa-file-pdf"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <a href="javascript:;">Document 1.pdf</a>
+                                                    </td>
+                                                    <td class="cell-detail" width="50%">
+                                                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <span class="date">07/04/2019</span>
+                                                        <span class="cell-detail-description">04:00 pm</span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="cell-detail">
+                                                        <span class="type-file">
+                                                            <i class="fas fa-file"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <a href="javascript:;">Document 1.txt</a>
+                                                    </td>
+                                                    <td class="cell-detail" width="50%">
+                                                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <span class="date">07/04/2019</span>
+                                                        <span class="cell-detail-description">04:00 pm</span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="cell-detail">
+                                                        <span class="type-file">
+                                                            <i class="fas fa-file-excel"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <a href="javascript:;">Document 1.xlsx</a>
+                                                    </td>
+                                                    <td class="cell-detail" width="50%">
+                                                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <span class="date">07/04/2019</span>
+                                                        <span class="cell-detail-description">04:00 pm</span>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="cell-detail">
+                                                        <span class="type-file">
+                                                            <i class="fas fa-file-powerpoint"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <a href="javascript:;">Document 2.pptx</a>
+                                                    </td>
+                                                    <td class="cell-detail" width="50%">
+                                                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <span class="date">05/28/2019</span>
+                                                        <span class="cell-detail-description">10:00 pm</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell-detail">
+                                                        <span class="type-file">
+                                                            <i class="fas fa-file-word"></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <a href="javascript:;">Document 3.docx</a>
+                                                    </td>
+                                                    <td class="cell-detail" width="50%">
+                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                                                    </td>
+                                                    <td class="cell-detail">
+                                                        <span class="date">01/01/2019</span>
+                                                        <span class="cell-detail-description">11:00 am</span>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /Documents -->
+                                    <!-- PAGINATION -->
+                                    <div class="pagination-wrap mt-2">
+                                        <div class="pagination-l">
+                                            <div class="page-results">
+                                                Display
+                                                <select name="">
+                                                    <option value="20">20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="40">40</option>
+                                                    <option value="50">50</option>
+                                                </select>
+                                                results per page
+                                            </div>
+                                        </div>
+                                        <div class="pagination-r">
+                                            <nav class="pagination">
+                                                <p class="pag-viewing">Viewing 1 - 20 of 150</p>
+                                                <ul class="pagination">
+                                                    <li><a href="#" class="disabled"><i class="fas fa-angle-double-left"></i></a></li>
+                                                    <li><a href="#" disabled=""><i class="fas fa-angle-left"></i></a></li>
+                                                    <li><a class="active" href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">...</a></li>
+                                                    <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <!-- /. PAGINATION -->
+                                </div>
+                                <!-- /. CONTENT -->
+                            </div>
+                            <!-- /. CONTENT CONTAINER -->
+                            <div id="scroll-top-container" class="scroll-top-container">
+                                <a href="#main-header" class="scroll-to">
+                                    <i class="fa fa-arrow-circle-up"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <!-- /. left-content  -->
+                    </section>
+                    <!-- /. main-content -->
+                </div>
+                <!-- /. wrapper -->
+                <footer class="main-footer">
+                    <div class="widgets">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 widget">
+                                    <h3>&nbsp;</h3>
+                                    <img src="assets/img/best-logistics-logo-inline-white.png" width="280px" class="mb-2" alt="logo">
+                                    <p >Best Logistics Group.</p>
+                                </div>
+                                
+                                <div class="col-lg-4 widget">
+                                    <h3>How To</h3>
+                                    <ul class="arrow-list-footer">
+                                        <li>
+                                            <a href=""> How to integrate McLeod Logistics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""> How to track freight with GPS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""> Using escalation and advanced scheduling
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-lg-4 widget">
+                                    <h3>Quick Navigation</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">New Request</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Highlighted Carriers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Shipping Map</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Freight Map </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="copyright">
+                        <p>© 2019 all rights reserved. <a href="javascript:;"><strong>Best Logistics Group</strong></a>.</p>
+                    </div>
+                </footer>
+                
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <link rel="stylesheet" href="./assets/css/all.css">
+                <script src="./assets/js/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+                <script src="./assets/js/bootstrap.min.js"></script>
+                <script src="./assets/js/masonry.pkgd.min.js"></script>
+                <script src="./assets/js/custom.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiIDL8ydB1s19Lq0gJ8_NZSuNJ5NStWTw&callback=initMap"></script>
+            </body>
+            
+            </html>

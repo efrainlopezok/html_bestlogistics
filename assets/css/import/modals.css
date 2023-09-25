@@ -1,0 +1,26 @@
+
+
+.c-modal .modal-dialog {
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 50%;
+    transform: translateY(-50%) !important;
+}
+.c-modal .modal-content {
+    background-color: #fff;
+    margin-top: 0;
+}
+.c-modal .modal-body {
+    max-height: calc(100vh - 220px);
+    overflow-y: auto;
+    color: inherit;
+}
+
+.c-modal .modal-title {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}

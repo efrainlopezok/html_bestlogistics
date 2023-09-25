@@ -1,0 +1,36 @@
+
+.inf-signature {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.inf-signature >.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.inf-signature div[class*="col-"] {
+  text-align: left;
+  font-size: 0.875em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.inf-signature .row-cols-2:nth-last-child(even) div[class*="col-"] {
+  border-bottom: 1px solid #333;
+}
+
+.signature-image {
+  display: block;
+  text-align: center;
+}
+.signature-image img {
+  width: 360px;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .inf-signature .row-cols-2:nth-last-child(odd) div[class*="col-"] {
+    border-bottom: 1px solid #333;
+  }
+}

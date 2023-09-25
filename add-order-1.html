@@ -1,0 +1,974 @@
+<html lang="en" nighteye="disabled">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- MAKE IT RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/import.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+    <title>BestLogistic - Orders</title>
+</head>
+
+<body data-gr-c-s-loaded="true" class="add-orders-page">
+    <nav class="navigation">
+        <div class="inner-pad">
+            <div class="nav-logo">
+                <div class="logo-left">
+                    <img src="./assets/img/best-logistics-logo-inline-white.png" alt="Logo Image">
+                </div>
+                <span class="brand">BestLogistic Group<sup>®</sup></span>
+            </div>
+        </div>
+
+        <ul class="dmain-menu">
+            <li>
+                <a href="./index.html" class="nav-link">
+                    <span class="nav-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </span> Dashboard
+                </a>
+            </li>
+            <li class="active">
+                <a href="./orders.html" class="nav-link">
+                    <span class="nav-icon">
+                                    <i class="fas fa-truck"></i>
+                                </span> Orders
+                </a>
+            </li>
+            <li>
+                <a href="./documents.html" class="nav-link">
+                    <span class="nav-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span> Documents
+                </a>
+            </li>
+            <li>
+                <a href="./settings.html" class="nav-link">
+                    <span class="nav-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </span> Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="notifications.html" class="nav-link">
+                    <span class="nav-icon"><i class="fas fa-bell"></i></span> Notifications
+                </a>
+            </li>
+        </ul>
+
+        <div class="inner-pad text-center">
+            <a href="javascript:;" class="btn btn-secondary d-block mb-2">Add LTL Order</a>
+            <a href="javascript:;" class="btn btn-secondary d-block">Add TL Order</a>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <header id="main-header" class="main-header">
+            <nav id="navbar" class="has_fixed_navbar animate-me">
+               <div id="nav-left">
+                  <!-- NAVIGATION TOGGLE -->
+                  <div class="nav-left-l">
+                     <a href="javascript:void(0)" id="nav-trigger"><i class="fa fa-chevron-left"></i></a>
+                  </div>
+                  
+                  <!-- START LOGO -->
+                  <div id="nav-logo">
+                     <a href="./">
+                        <img src="./assets/img/best-logistics-logo-inline.png" alt="Logo Image"> </a>
+                     </div>
+                     
+                     <!-- USER INFORMATIONS -->
+                     <div id="nav-user" class="clearfix bp_is_active">
+                        <a href="javascript:void(0);" id="user-thumb">
+                           Hi <strong class="font-weight-bold">Joe</strong>!
+                           <img alt="user" src="./assets/img/user.jpg" class="avatar avatar-96 photo" >
+                        </a>
+                        
+                     </div>
+                  </div> <!-- /. nav-left -->
+                  
+                  <!-- EXTRA BUTTONS ABOVE THE SIDBAR -->
+                  <div id="nav-buttons" class="nav-buttons">
+                     <!-- SIDEBAR TOGGLE -->
+                     <a href="javascript:void(0)" id="nav-sidebar-trigger"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                     <ul>
+                        <li class="dropdown">
+                           <a href="javascript:void(0)" id="nav-notification-trigger" title="View your notifications" data-toggle="dropdown" aria-expanded="false">
+                              <i class="far fa-bell"></i>
+                           </a>
+                           <!--  NOTIFICATIONS -->
+                           <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-246px, 64px, 0px);">
+                                 <form>
+                                       <!--begin: Head -->
+                           <div class="kt-head kt-head--skin-dark kt-head--fit-x kt-head--fit-b" style="background-image: url(./assets/img/dpdn-hero.jpg)">
+                              <h3 class="kt-head__title">
+                                 User Notifications
+                                 &nbsp;
+                                 <span class="btn btn-success btn-sm btn-bold btn-font-md">23 new</span>
+                              </h3>
+                     
+                              <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-success kt-notification-item-padding-x" role="tablist">
+                                 <li class="nav-item">
+                                       <a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_notifications" role="tab" aria-selected="true">Alerts</a>
+                                 </li>
+                                 <li class="nav-item">
+                                       <a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Events</a>
+                                 </li>
+                                 <li class="nav-item">
+                                       <a class="nav-link" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Logs</a>
+                                 </li>
+                              </ul>
+                           </div>
+                     <!--end: Head -->
+                     
+                     <div class="tab-content">
+                           <div class="tab-pane active show" id="topbar_notifications_notifications" role="tabpanel">
+                              <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll ps ps--active-y" data-scroll="true" data-height="300" data-mobile-height="200" style="height: 300px; overflow: hidden;">
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-chart-line text-success"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New order has been received
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             2 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-box text-info"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New customer is registered
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             3 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-chart-pie text-danger"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             Application has been approved
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             3 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-file-image text-warning"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New file has been uploaded
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             5 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="far fa-comment-dots tex-info"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New user feedback received
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             8 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-life-ring text-success"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             System reboot has been successfully completed
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             12 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-map-marked-alt text-danger"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New order has been placed
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             15 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                           </div>
+                           </div>
+                           <div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+                              <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll ps" data-scroll="true" data-height="300" data-mobile-height="200" style="height: 300px; overflow: hidden;">
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-file-image text-success"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New report has been received
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             23 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-download text-danger"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             Finance report has been generated
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             25 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="far fa-chart-bar text-success"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New order has been received
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             2 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-user-check"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New customer is registered
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             3 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-thumbs-up text-danger"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             Application has been approved
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             3 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                       <div class="kt-notification__item-icon">
+                                          <i class="fas fa-file-upload text-warning"></i>
+                                       </div>
+                                       <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New file has been uploaded
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             5 hrs ago
+                                          </div>
+                                       </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                    <div class="kt-notification__item-icon">
+                                          <i class="far fa-comment-dots tex-info"></i>
+                                    </div>
+                                    <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New user feedback received
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             8 hrs ago
+                                          </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                    <div class="kt-notification__item-icon">
+                                          <i class="fas fa-life-ring text-success"></i>
+                                    </div>
+                                    <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             System reboot has been successfully completed
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             12 hrs ago
+                                          </div>
+                                    </div>
+                                 </a>
+                                 <a href="#" class="kt-notification__item">
+                                    <div class="kt-notification__item-icon">
+                                          <i class="fas fa-map-marked-alt text-danger"></i>
+                                    </div>
+                                    <div class="kt-notification__item-details">
+                                          <div class="kt-notification__item-title">
+                                             New order has been placed
+                                          </div>
+                                          <div class="kt-notification__item-time">
+                                             15 hrs ago
+                                          </div>
+                                    </div>
+                                 </a>
+                           </div>
+                           </div>
+                           <div class="tab-pane" id="topbar_notifications_logs" role="tabpanel">
+                              <div class="kt-grid kt-grid--ver" style="min-height: 200px;">
+                                 <div class="kt-grid kt-grid--hor kt-grid__item kt-grid__item--fluid kt-grid__item--middle">
+                                       <div class="kt-grid__item kt-grid__item--middle kt-align-center">
+                                          All caught up!
+                                          <br>No new notifications.
+                                       </div>
+                                 </div>
+                              </div>
+                           </div>
+                     </div>
+                                 </form>
+                              </div>
+                           <!-- ./ NOTIFICATIONS -->
+                        </li>
+                     </ul>
+                  </div>
+                  
+            </nav>
+        </header>
+
+        <section id="main-content" class="main-content with-sidebar">
+            <aside id="right-sidebar" class="right-sidebar">
+
+                <div class="intern-padding color-box">
+                    <ul class="arrow-list">
+                        <li><a href="">New Request</a></li>
+                        <li><a href="">Highlighted Carriers</a></li>
+                        <li><a href="">Shipping Map</a></li>
+                        <li><a href="">Freight Map</a></li>
+                    </ul>
+                </div>
+
+                <div class="intern-padding">
+                    <h5>Suggested Carriers</h5>
+                    <img src="./assets/img/user.jpg" alt="" class="avatar-pic">
+                </div>
+
+                <div class="intern-padding color-box">
+                    <h5>How To</h5>
+                    <ul class="icon-list">
+                        <li>
+                            <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                            <a href="">How to integrate McLeod Logistics<span class="ml-2  badge badge-skyblue badge-pill">
+                                            <i class="fa fa-thumbs-up"></i> 5</span>
+                                        </a>
+                        </li>
+                        <li>
+                            <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                            <a href="">How to track freight with GPS<span class="ml-2  badge badge-skyblue badge-pill"><i class="fa fa-thumbs-up"></i> 5</span></a>
+                        </li>
+                        <li>
+                            <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                            <a href="">Using escalation and advanced scheduling<span class="ml-2  badge badge-skyblue badge-pill"><i class="fa fa-thumbs-up"></i> 5</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="intern-padding box-title">
+                    <h5>Recent Activity</h5>
+                    <ul class="icon-list">
+                        <li>
+                            <span class="l-icon"><i class="far fa-calendar-alt"></i></span>
+                            <a href="#">Request has been dispatched from San Antonio</a>
+                        </li>
+                        <li>
+                            <span class="l-icon"><i class="far fa-calendar-alt"></i></span>
+                            <a href="#">Request has been Picked Up in Asheville, NC</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- /. right-sidebar -->
+
+            <div id="left-content" class="left-content">
+
+                <div class="alert alert-info" style="margin-bottom: 0; text-align:center; z-index: 2;">
+                    You are logged in as another user : <a class="btn btn-primary btn-xs" href="http://162.243.169.226/users/switch-back">Switch Back</a>
+                </div>
+                <div class="container">
+                    <div class="row dashboard-panel-wrapper">
+                        <div class="wiz-heading" data-step="1">
+                            <ul class="suggestion-tags">
+                                <div id="order-button">
+                                    <a href="#shipper-information">
+                                        <li class="li-order-button" data-value="981">
+                                            <span>GARNER, NC-&gt;BIRMINGHAM, AL</span></li>
+                                    </a>
+                                    <a href="#shipper-information">
+                                        <li class="li-order-button" data-value="984">
+                                            <span>WINSTON-SALEM, NC-&gt;BIRMINGHAM, AL</span></li>
+                                    </a>
+                                    <a href="#shipper-information">
+                                        <li class="li-order-button" data-value="988">
+                                            <span>STONE MOUNTAIN, GA-&gt;HUNTSVILLE, AL</span></li>
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="form-content">
+                                <input type="hidden" name="_token" value="VCBrA67e42aorqzRZENgCjGpvENv3VzGJ6uosUAA">
+                                <div class="row row-wizard">
+                                    <div class="col-md-8 wiz-col-content">
+                                        
+                                        <h3 class="text-center mb-3" id="shipper-information">Shipper Information</h3>
+                                        <div class="row" data-step="2">
+                                            <div class="col-12 form-group">
+                                                
+                                                <label for="search-to-location">Location Name</label>
+                                                <div class="search-control sugg-search-control">
+                                                    <i class="fas fa-search"></i>
+                                                    <input type="text" name="suggestions" id="search-to-location" placeholder="Location" autocomplete="off" data-target-popup="#suggestions_shipper">
+                                                    <div class="autocomplete-popup" id="suggestions_shipper">
+                                                        <div class="popup-inner">
+                                                            <div class="close">
+                                                                <i class="fas fa-times"></i>
+                                                            </div>
+                                                            <div id="locationfrom-list" wrap-tag-suggestions="#shipper_to_loc">
+                                                                <div class="popup-item li-popup-item-from-location" data-value="STONE MOUNTAIN, GA">
+                                                                    <h6><i class="fas fa-map-marked-alt text-success"></i> <strong>STONE MOUNTAIN, GA</strong></h6>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="popup-item li-popup-item-from-location" data-value="GARNER, NC">
+                                                                    <h6><i class="fas fa-map-marked-alt text-success"></i> <strong>GARNER, NC</strong></h6>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="popup-item li-popup-item-from-location" data-value="WINSTON-SALEM, NC">
+                                                                    <h6><i class="fas fa-map-marked-alt text-success"></i> <strong>WINSTON-SALEM, NC</strong></h6>
+                                                                </div>
+                                                                <hr>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- /. suggestions -->
+                                                <ul class="suggestion-tags">
+                                                    <div id="shipper_to_loc">
+                                                        <a href="#consigee-information">
+                                                            <li class="li-location-button" data-value="1003"><span>BIRMINGHAM, AL</span></li>
+                                                        </a>
+                                                        <a href="#consigee-information">
+                                                            <li class="li-location-button" data-value="1018"><span>PENSACOLA, FL</span></li>
+                                                        </a>
+                                                    </div>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-md-12"></div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_1">Address Field 1</label>
+                                                <input type="text" id="addr_1" name="shipper_address_1" placeholder="Address Field 1">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_2">Address Field 2 (Optional)</label>
+                                                <input type="text" id="addr_2" name="shipper_address_2" placeholder="Address Field 2">
+                                            </div>
+
+                                            <div class="col-md-6 form-group">
+                                                <label for="zip_code">Zip Code</label>
+                                                <input type="text" id="zip_code" name="shipper_zip" placeholder="Enter Zip Code">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="city_state">City/State</label>
+                                                <select name="shipper_city_id" id="city_state">
+                                                    <option value="">Select a City/State</option>
+                                                </select>
+                                            </div>
+
+                                            <input type="hidden" name="shipper_city" id="shipper_city">
+                                            <input type="hidden" name="shipper_state" id="shipper_state">
+
+                                            <div class="col-md-12"></div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_1">Shipper Departure (Early)</label>
+                                                <div class="row gutter-10">
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Date</label>
+                                                        <input type="date" name="shipper_departure_date_early" id="addr_1" placeholder="Departure Date">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Time</label>
+                                                        <input type="time" id="addr_1" style="width: 100%" name="shipper_departure_time_early" placeholder="Departure Time">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_1">Shipper Departure (Late)</label>
+                                                <div class="row gutter-10">
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Date</label>
+                                                        <input type="date" id="addr_1" name="shipper_departure_date_late" placeholder="Departure Date">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Time</label>
+                                                        <input type="time" id="addr_1" style="width: 100%" name="shipper_departure_time_late" placeholder="Departure Time">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 form-group">
+                                                <label for="contact_person">Contact Person<i class="required" aria-required="true"></i></label>
+                                                <input type="text" id="contact_person" name="shipper_contact_name" placeholder="Enter Contact Person">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="contact_phone">Contact Phone<i class="required" aria-required="true"></i></label>
+                                                <input type="text" id="contact_phone" name="shipper_contact_phone" placeholder="(___) ___-___">
+                                            </div>
+                                        </div>
+                                        <div id="scroll-top-container" class="scroll-top-container">
+                                            <a href="#main-header" class="scroll-to">
+                                                <i class="fa fa-arrow-circle-up"></i>
+                                            </a>
+                                        </div>
+
+                                        <h3 class="text-center mb-3" id="consigee-information">Consignee Information</h3>
+                                        <div class="row" data-step="1">
+                                            <div class="col-md-6 form-group">
+                                                <label for="search-to-location">Location Name</label>
+                                                <div class="search-control sugg-search-control">
+                                                    <i class="fas fa-search"></i>
+                                                    <input type="text" name="suggestions" id="search-to-location" placeholder="Location" autocomplete="off" data-target-popup="#suggestions_shipment">
+                                                    <div class="autocomplete-popup" id="suggestions_shipment">
+                                                        <div class="popup-inner">
+                                                            <div class="close">
+                                                                <i class="fas fa-times"></i>
+                                                            </div>
+                                                            <div id="locationfrom-list" wrap-tag-suggestions="#to-location">
+                                                                <div class="popup-item li-popup-item-from-location" data-value="STONE MOUNTAIN, GA">
+                                                                    <h6><i class="fas fa-map-marked-alt text-success"></i> <strong>STONE MOUNTAIN, GA</strong></h6>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="popup-item li-popup-item-from-location" data-value="GARNER, NC">
+                                                                    <h6><i class="fas fa-map-marked-alt text-success"></i> <strong>GARNER, NC</strong></h6>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="popup-item li-popup-item-from-location" data-value="WINSTON-SALEM, NC">
+                                                                    <h6><i class="fas fa-map-marked-alt text-success"></i> <strong>WINSTON-SALEM, NC</strong></h6>
+                                                                </div>
+                                                                <hr>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- /. suggestions -->
+                                                <ul class="suggestion-tags">
+                                                    <div id="to-location">
+                                                        <a href="#consigee-information">
+                                                            <li class="li-location-button" data-value="1003"><span>BIRMINGHAM, AL</span></li>
+                                                        </a>
+                                                        <a href="#consigee-information">
+                                                            <li class="li-location-button" data-value="1018"><span>PENSACOLA, FL</span></li>
+                                                        </a>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-12"></div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_1">Address Field 1</label>
+                                                <input type="text" id="consignee_address_1" name="consignee_address_1" placeholder="Address Field 1">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_2">Address Field 2 (Optional)</label>
+                                                <input type="text" id="consignee_address_2" name="consignee_address_2" placeholder="Address Field 2">
+                                            </div>
+
+                                            <div class="col-md-6 form-group">
+                                                <label for="zip_code">Zip Code</label>
+                                                <input type="text" id="consignee_zip" name="consignee_zip" placeholder="Enter Zip Code">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="city_state">City/State</label>
+                                                <select name="consignee_city_id" id="consignee_city_id">
+                                                    <option value="">Select a City/State</option>
+                                                </select>
+                                            </div>
+
+                                            <input type="hidden" name="consignee_city" id="consignee_city">
+                                            <input type="hidden" name="consignee_state" id="consignee_state">
+
+                                            <div class="col-md-12"></div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_1">Shipper Departure (Early)</label>
+                                                <div class="row gutter-10">
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Date</label>
+                                                        <input type="date" name="consignee_arrival_date_early" id="consignee_arrival_date_early" placeholder="Departure Date">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Time</label>
+                                                        <input type="time" id="consignee_arrival_time_early" style="width: 100%" name="consignee_arrival_time_early" placeholder="Departure Time">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="addr_1">Shipper Departure (Late)</label>
+                                                <div class="row gutter-10">
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Date</label>
+                                                        <input type="date" id="consignee_arrival_date_late" name="consignee_arrival_date_late" placeholder="Departure Date">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="" class="label-inner">Time</label>
+                                                        <input type="time" id="consignee_arrival_time_late" style="width: 100%" name="consignee_arrival_time_late" placeholder="Departure Time">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 form-group">
+                                                <label for="contact_person">Contact Person<i class="required" aria-required="true"></i></label>
+                                                <input type="text" id="consignee_contact_name" name="consignee_contact_name" placeholder="Enter Contact Person">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="contact_phone">Contact Phone<i class="required" aria-required="true"></i></label>
+                                                <input type="text" id="consignee_contact_phone" name="consignee_contact_phone" placeholder="(___) ___-___">
+                                            </div>
+                                        </div>
+                                        <div id="scroll-top-container" class="scroll-top-container">
+                                            <a href="#main-header" class="scroll-to">
+                                                <i class="fa fa-arrow-circle-up"></i>
+                                            </a>
+                                        </div>
+
+
+                                        <h3 class="text-center mb-3" id="order-information">Order Information</h3>
+                                        <div class="row" data-step="3">
+                                            <div class="col-md-6 form-group">
+                                                <label for="weight">Weight (lbs)</label>
+                                                <input type="text" id="shipment_weight" name="shipment_weight" placeholder="Enter Shipment Weight">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="ship_pieces">Shipment Pieces</label>
+                                                <input type="text" id="shipment_pieces" name="shipment_pieces" placeholder="Number of pallets">
+                                            </div>
+
+                                            <div class="col-md-6 form-group">
+                                                <label for="trailer_type">Trailer Type</label>
+                                                <select name="shipment_trailer_type" id="trailer_type">
+                                                    <option value="">Select Trailer type</option>
+                                                    <option value="53 VA – 53’ Van or Reefer">53 VA – 53’ Van or Reefer</option>
+                                                    <option value="FD – Flat or Step Deck">FD – Flat or Step Deck</option>
+                                                    <option value="V – Van only">V – Van only</option>
+                                                    <option value="PO – Power Only">PO – Power Only</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="consignee_reference">Consignee Reference</label>
+                                                <input type="text" id="consignee_reference" name="shipment_consignee_reference" placeholder="Consignee Reference">
+                                            </div>
+
+                                            <div class="col-md-6 form-group">
+                                                <label for="pu_number">PU Number</label>
+                                                <input type="text" id="pu_number" name="shipment_pu_number" placeholder="Enter PU Number">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label for="bol_number">BOL Number</label>
+                                                <input type="text" id="bol_number" name="shipment_bol_number" placeholder="Enter BOL Number">
+                                            </div>
+
+                                            <div class="col-md-6 form-group">
+                                                <label for="ship_comment">Shipment Comment</label>
+                                                <textarea id="ship_comment" rows="2" name="shipment_comment" placeholder="leave your comment"></textarea>
+                                            </div>
+                                            <div class="col-12 form-submit">
+                                                <button type="submit" class="btn btn-primary-b btn-create-order" data-toggle="modal" data-target="#modalOrderSuccess">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 wiz-col-aside">
+
+                                        <div class="wiz-heading" data-step="2">
+                                            <h4>Step 1 of 3: Shipper Information</h4>
+                                        </div>
+                                        <div class="wiz-content" data-step="2">
+                                            <img class="img-fluid small-img mb-3" src="./assets/img/deliveryman-512.png" alt="Shipper Information">
+                                            <h5>Create your Order</h5>
+                                            <p>Talk to experts, dolor sit amet, consectetur elit adipiscing. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus.</p>
+                                        </div>
+
+                                        <div class="wiz-heading" data-step="1">
+                                            <h4>Step 2 of 3: Consignee Information</h4>
+                                        </div>
+                                        <div class="wiz-content" data-step="1">
+                                            <img class="img-fluid small-img mb-3" src="./assets/img/shipment-info.png" alt="">
+                                            <h5>Create your Order</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit adipiscing. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus.</p>
+                                        </div>
+
+                                        <div class="wiz-heading" data-step="3">
+                                            <h4>Step 3 of 3: Shipment Information</h4>
+                                        </div>
+                                        <div class="wiz-content" data-step="3">
+                                            <div class="pic-ratio">
+                                                <picture><img src="./assets/img/truck-shipment.jpg" alt=""></picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div id="scroll-top-container" class="scroll-top-container">
+                                <a href="#main-header" class="scroll-to">
+                                    <i class="fa fa-arrow-circle-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /. left-content  -->
+
+        </section>
+        <!-- /. main-content -->
+    </div>
+    <!-- /. wrapper -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modalMedium" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-medium" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="exampleModalLabel">Add Carrier</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-4 col-sm-6 pr-md-3 pr-sm-0">
+                                <label for="text1">Carrier Name</label>
+                                <input type="text" class="form-control form-control-sm" id="text1" aria-describedby="emailHelp" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group col-md-4 col-sm-6 px-md-0">
+                                <label for="text1">MC Number</label>
+                                <input type="text" class="form-control form-control-sm" id="text1" aria-describedby="emailHelp" placeholder="MC Number (Optional)">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="text1">US DOT</label>
+                                <input type="text" class="form-control form-control-sm" id="text1" aria-describedby="emailHelp" placeholder="US DOT (Optional)">
+                            </div>
+                        </div>
+                        <h6>Primary Contact</h6>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="text1">First Name</label>
+                                <input type="text" class="form-control form-control-sm" id="text1" aria-describedby="emailHelp" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="text1">Last Name</label>
+                                <input type="text" class="form-control form-control-sm" id="text1" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="exampleInputEmail1">Phone</label>
+                                <input type="tel" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Modal 1 -->
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modalLarge" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-medium" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="fas fa-shipping-fast fa-5x"></i>
+                    </div>
+                    <div class="row post-load">
+                        <div class="col-sm-6 pr-md-4">
+                            <h6> Pick Up:</h6>
+                            <p class="mb-3"><strong>Chicago, II</strong>
+                                <br> 06/27/2018 09:00 am</p>
+
+                            <h6>DROP OFF:</h6>
+                            <p><strong>Durham, NC</strong>
+                                <br> 06/27/2018 09:00 am</p>
+                        </div>
+                        <div class="col-sm-6 pl-sm-4">
+                            <h6>Load details</h6>
+                            <p>Product Type: Textiles
+                                <br> Truck Requeriments 53'
+                                <br> Trailer
+                                <br> Hazardous Material</p>
+                        </div>
+                    </div>
+                    <div class="col text-center pt-3">
+                        <a href="" class="btn btn-orange col-sm-4">Edit Load</a>
+                        <button type="submit" class="btn btn-primary col-sm-4 ml-sm-5 ml-sm-3 mt-sm-0 mt-3">Post Load</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Modal 2 -->
+    <!-- Modal Success -->
+    <div class="modal c-modal fade" id="modalOrderSuccess" tabindex="-1" role="dialog" aria-labelledby="modalOrderSuccess" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h3 class="modal-title">Shipment Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="mb-3"><i class="fa fa-box mr-1 text-info"></i> Consignee Information </h4>
+                
+                <p><strong>Destination Location:</strong> BIRMINGHAM, AL<br>
+                    <strong>Address Field 1</strong> 2508 Starita Rd. Charlotte, NC 28 201<br>
+                    </i><strong>Zip Code:</strong> 543212<br>
+                    <strong>City/State:</strong> New Jersey<br>
+                    <strong>Shipper Departure (Early):</strong>12/26/2020 10:00<br>
+                    <strong>Shipper Departure (Late):</strong>12/26/2020 10:00<br>
+                    </i><strong>Contact Person:</strong> 884654564<br>
+                    </i><strong>Contact Phone:</strong> 878788355
+                </p>
+
+                <h4 class="mb-3 mt-4"><i class="fas fa-user mr-1 text-info"></i> Shipper Information</h4>
+                    <strong>Destination Location:</strong> BIRMINGHAM, AL<br>
+                    <strong>Address Field 1</strong> 2508 Starita Rd. Charlotte, NC 28 201<br>
+                    </i><strong>Zip Code:</strong> 543212<br>
+                    <strong>City/State:</strong> New Jersey<br>
+                    <strong>Shipper Departure (Early):</strong>12/26/2020 10:00<br>
+                    <strong>Shipper Departure (Late):</strong>12/26/2020 10:00<br>
+                    </i><strong>Contact Person:</strong> 884654564<br>
+                    </i><strong>Contact Phone:</strong> 878788355
+                </p>
+
+                <h4 class="mb-3 mt-4"><i class="fas fa-truck mr-1 text-info"></i> Order Information</h4>
+                    <strong>Weight (lbs):</strong> 45<br>
+                    <strong>Shipment Pieces</strong> 34<br>
+                    <strong>Trailer Type:</strong> Ltl Large<br>
+                    <strong>Consignee Reference:</strong>Obcaecati Commodi<br>
+                    </i><strong>PU Number:</strong> 884654564<br>
+                    </i><strong>BOL Number:</strong> 878788355<br>
+                    <strong>Shipment Comment:</strong> Lorem ipsum obcaecati, explicabo commodi architecto enim!
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Edit Order</button>
+                <button type="button" class="btn btn-primary">Confirm Order</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 widget">
+                        <h3>&nbsp;</h3>
+                        <img src="assets/img/best-logistics-logo-inline-white.png" width="280px" class="mb-2" alt="logo">
+                        <p>Best Logistics Group.</p>
+                    </div>
+
+                    <div class="col-lg-4 widget">
+                        <h3>How To</h3>
+                        <ul class="arrow-list-footer">
+                            <li>
+                                <a href=""> How to integrate McLeod Logistics
+                                                                                                </a>
+                            </li>
+                            <li>
+                                <a href=""> How to track freight with GPS
+                                                                                                </a>
+                            </li>
+                            <li>
+                                <a href=""> Using escalation and advanced scheduling
+                                                                                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 widget">
+                        <h3>Quick Navigation</h3>
+                        <ul>
+                            <li>
+                                <a href="#">New Request</a>
+                            </li>
+                            <li>
+                                <a href="#"> Highlighted Carriers</a>
+                            </li>
+                            <li>
+                                <a href="#"> Shipping Map</a>
+                            </li>
+                            <li>
+                                <a href="#"> Freight Map </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2019 all rights reserved. <a href="javascript:;"><strong>Best Logistics Group</strong></a>.</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

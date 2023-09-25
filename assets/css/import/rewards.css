@@ -1,0 +1,100 @@
+
+/* Rewards ZoomieBank
+--------------------------------*/
+
+.box-zoomie{
+    background: #fff;
+    padding: 15px 0 0;
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0.4rem 1rem rgba(0,0,0,.06);
+    -moz-box-shadow: 0 .4rem 1rem rgba(0,0,0,.06);
+    box-shadow: 0 0.4rem 1rem rgba(0,0,0,.06);
+    border-radius: 8px;
+}
+.box-zoomie img {
+    border-radius: 8px;
+    display: block;
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-zoomie{
+    padding: 20px 13px;
+    text-align: center;
+    min-height: 138px;
+    position: relative;
+}
+.box-zoomie .checkbox.checkbox-slider--b-flat{
+    margin-top: 0;
+}
+.box-zoomie p,
+.box-zoomie h5{
+    margin-bottom: 16px;
+}
+.box-zoomie h5{
+    font-size: 19px;
+    color: #212529d6;
+}
+.box-zoomie p{
+    color: #a5a5a5d4;
+    font-size: 14px;
+}
+.box-zoomie .options-zoomie{
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    color: #44484bd4;
+}
+.box-zoomie .options-zoomie i{
+    color: #a7a7a7d4;
+}
+.box-zoomie .options-zoomie .dropdown a{
+    display: block;
+}
+.box-zoomie .dropdown-menu.dropdown-menu-lg{
+    width: auto;
+    padding: 6px 10px !important;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+}
+/* Rewards ZoomieBank
+--------------------------------*/
+.table-z-manager td a.buyer{
+    color:#a8b193;
+}
+.table-z-manager .fa-star{
+    font-size: 11px;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 1px;
+    top: -1px;
+}
+
+/* Box zoo-manager */
+.box-zoo-manager {
+    min-height: calc( 100% - 30px );
+}
+.box-zoo-manager .fa-star{
+    color: #ffc107;
+    font-size: 0.785em;
+}
+.box-zoo-manager .box-body {
+    font-size: 0.875em;
+}
+.box-zoo-manager h5{
+    margin-bottom: 0px;
+}
+.box-zoo-manager .intern-padding{
+    padding: 20px 20px;
+}
+.box-zoo-manager .redemption{
+    font-size: 0.88em;
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+    padding: 0px 8px;
+    background-color: #a8b174;
+    color: #fff !important;
+}

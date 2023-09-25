@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+    
+  <style type="text/css">
+
+body,.wrapper {
+    background-color: #f2f2f2;
+    color: #262626;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    margin: 0;
+}
+/* wrappers */
+.wrapper{
+    width:100%;
+    table-layout:fixed;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+.container{
+    max-width:600px;
+    margin:0 auto;
+}
+/* Tipography */
+h1,h2,h3,h4,h5,p,a,span,button,li{
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    margin-top: 0;
+}
+h1,h2,h3,h4,h5 {
+    color: #262626;
+}
+h1{
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 360px;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    margin-bottom: 30px;
+}
+h3 { font-size: 24px; line-height: 25px;    margin-bottom: 15px; }
+h4{
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+}
+p{ 
+    color: #262626;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0;
+}
+img{
+    margin:0;
+    padding:0;
+    border-spacing:0;
+}
+a {
+    display: inline-block;
+}
+
+/* Common clases */
+
+#top_nav {
+    color: #000;
+    font-size: 13px;
+    line-height: 48px;
+}
+#top_nav a {
+    color: inherit;
+}
+
+#hero .hero-top h1,
+#hero .hero-top p { color: inherit; }
+#hero .hero-top p {font-size: 21px;line-height: normal;margin-bottom: 0;}
+#hero .hero-bottom p {font-size: 18px;line-height: 30px;max-width: 378px;text-align: center;}
+
+
+#pre_footer{
+    background:#f8f6fc;
+    padding:40px 15px 50px;
+    text-align:center;
+}
+#pre_footer #cta_content h3 {
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#pre_footer #cta_content p {
+    font-size: 17.5px;
+    line-height: 25px;
+    letter-spacing: 0.025em;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pre_footer #cta_content p.big {
+    font-size: 22.5px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#pre_footer #cta_content p.big span {
+    font-weight: normal;
+}
+#main_content{
+    padding: 60px 80px 55px;
+}
+#items_cart{
+    padding: 50px 15px 35px;
+}
+.clearfix {
+    clear: both;
+    display: table;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: none;
+    min-width: 125px;
+    display: inline-block;
+    padding: 10px 12px 10px;
+    text-align: center;
+    border: 1px solid;
+    color: #000;
+}
+.btn.small{
+    min-width: 115px;
+    font-size: 15px;
+}
+
+.btn-g1 {
+    background: #32384f;
+    color: #fff;
+    text-decoration: none;
+    min-width: 175px;
+    padding: 17px 12px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+}
+.btn-g3 {
+    background: #a8b174;
+    color: #fff;
+    text-decoration: none;
+    min-width: 175px;
+    padding: 17px 12px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+}
+.btn-g2{
+    background: #a8b174;
+    color: #fff;
+    text-decoration: none;
+  
+}
+/* item table */
+.item-table{
+    max-width: 540px;
+    margin: 0 auto;
+    border-top: 1px solid #cdcdcd;
+    padding: 15px 0;
+}
+.item-table p{
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+    margin: 0;
+    line-height: normal;
+}
+.item-img {
+    width: 33px;
+    
+}
+.item-img img{
+    width: 25px;
+}
+.order-list table p span{
+    display: block;
+}
+#content-info p a{
+    text-decoration: underline; 
+    color: #262626;
+}
+/* order-detail */
+
+#order-detail span{
+      
+      color: #262626;
+  }
+  #order-detail a{
+    text-decoration: none;
+    color: #262626;
+  }
+  #order-detail th{
+    text-align: left;
+    vertical-align: bottom;
+    padding: 20px 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  
+  #order-detail table td{
+    border-bottom: 1px solid #cdcdcd;
+    padding: 20px 12px;
+  }
+  #order-detail table td strong{
+    display: none;
+    opacity: 0;
+    font-size: 16px;
+  }
+
+.img-res{
+    display: none;
+}
+#socials{
+    margin-top: 15px;
+}
+#footer{
+    background-color: #1c1c1c;
+    color: #808080;
+}
+#footer h5 {
+    text-align: right;
+}
+#footer a{
+    color: inherit;
+    text-decoration:underline;
+    display: inline-block !important;
+}
+#footer p{
+    margin-bottom: 0;
+    color: inherit;
+    max-width: 100%;
+    font-size: 12.5px;
+    text-align: right;
+    line-height: 1.45em;
+}
+#footer strong {
+    color: #a9a9a9;
+}
+#socials,#info_footer{
+    float: left;
+}
+#socials a{
+    display:inline-block;
+    margin-left:5px;
+    width:24px;
+    height:22px;
+}
+#socials a img{
+    width:auto;
+    height:22px;
+}
+@media screen and (max-width: 536px) {
+    .order-list table{
+        float: initial!important;
+        width: auto!important;
+    }
+    #order-detail table td strong{
+        display: block;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+    #order-detail th{
+        display: none;
+    }
+    #order-detail table td{
+        display: block;
+        border-bottom: 0;
+        border-top: 2px solid #dee2e6;
+        border-left: 0!important;
+        width: 100%!important;
+    }
+    .img-des{
+        display: none!important;
+    }
+    .img-res{
+        display: block!important;
+        
+    }
+    #order-detail table td{
+        padding: 20px 0px!important;
+    }
+    #socials{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .btn-g1, .btn-g3 {
+        padding: 14px 22px !important;
+        font-size: 16px;
+    }
+    #main_content {
+         padding: 30px 30px 35px!important;
+    }
+    p {
+        font-size: 16px;
+         line-height: 25px;
+    }
+    h2 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    #wrap_footer {
+        width: auto !important;
+    }
+   
+}
+
+@media screen and (max-width: 440px) {
+    #main_content .col-bg-mobile {
+        width: 35% !important;
+    }
+    #socials, #info_footer {
+        float: none!important;
+        text-align: center;
+        width: 100%;
+    }
+    #footer table {
+        float: none;
+        width: auto;
+    }
+    #footer p,
+    #socials td{
+        text-align: center;
+    }
+    .btn{
+        min-width: auto;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 28px;
+        max-width: initial;
+    }
+    .wrap-hero-text{
+        width: 100% !important;
+        text-align: center;
+        padding: 0 15px;
+    }
+    #footer h5 {
+        text-align: center;
+    }
+}
+  </style>
+</head>
+  <body class="wrapper">
+    <div class="container">
+        <!-- Header -->
+        <table border="0" bgcolor="#fff" cellpadding="0" cellspacing="0" width="100%" style="padding: 24px 10px 24px;">
+            <tr>
+                <td align="center">
+                   <a href=""><img src="./assets/images/logo-1.png" alt="logo" width="175px" style="width: 175px;"></a>
+                </td>
+            </tr>
+        </table>
+        <!-- Hero -->
+        <table border="0" bgcolor="#fff" cellpadding="0" cellspacing="0" width="100%" id="hero"  style="background:url(./assets/images/hero-abandoned.png);background-size: cover;">
+            <tr>
+               
+                <td class="wrap-hero-text" align="center" style="width: 100%; max-width: 600px; text-align: center; padding: 67px 15px;">
+                    <h1>NEW ORDER</h1>
+                    <a href="https://greenstonemedia.com/" style="text-decoration: none; color:#fff;" class="btn-g3">Go to site</a>
+                </td>
+            </tr>
+        </table>
+        <!-- Main Section -->
+        <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="100%" id="main_content">
+            <tr>
+                <td id="content-info">
+                    <p style="font-size: 16px; line-height: 22px; margin-bottom: 40px;">
+                        <strong>Subject:</strong> New Request from Ty Hallock<br />
+                        <strong>To:</strong> <a href="mailto:ty@greenstonemedia.com" style="text-decoration: underline; color: #262626;">ty@greenstonemedia.com</a>
+                    </p>
+                    <p style="margin-bottom: 40px;">The order From ASHEVILLE to WHITTIER is now in-route headed Noth There is 2405 mils estimated. </p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a href="https://greenstonemedia.com/" class="btn-g1" style="margin-bottom: 20px;padding: 17px 50px; text-decoration: none; color:#fff;">View Order </a>
+                </td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%"  style="background-color: #f7f7f7;" id="order-detail" >
+                <tr>
+                    <td style="padding: 50px 15px 50px; ">
+                        <h2>
+                            Order Detail
+                        </h2>
+        
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Departure</th>
+                                    <th>Destination</th>
+                                    <th>Ship Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <td style="vertical-align: top;  " >
+                                        <strong>Order</strong>
+                                        <span style="font-size: 16px;" >1238535</span> <br />
+                                    <img src="./assets/images/ico-images.png" style="width: 15px; display: inline-block" alt="" width="15px"> <span style="font-weight: 600; background-color: #ffc107; font-size: 10px; padding: 1px 4px; margin-left: 7px;" >+5</span></span>
+                                    </td>
+                                    <td style="vertical-align: top;" >
+                                        <strong>Departure</strong>
+                                        <a href="./order-detail.html" style="font-size: 16px;">Browns Summit, NC</a><br />
+                                        <span style="font-size: 13px; color: #999999;">Mortar Type</span>
+                                    </td>
+                                    <td style="vertical-align: top;" >
+                                        <strong>Destination</strong>
+                                        <span style="font-size: 16px;">San Francisco, CA</span> <br />
+                                        <span style="font-size: 13px; color: #999999;">Wilkes-barre, PA</span>
+                                    </td>
+                                    <td style="vertical-align: top;" >
+                                        <strong>Ship Date</strong>
+                                        <span style="font-size: 16px;" >09/25/2019</span> <br />
+                                        <span  style="font-size: 13px; color: #999999;" >08:00 am</span>
+                                    </td>
+                                    <td width="10%" style="vertical-align: middle;"  >
+                                        <strong>Status</strong>
+                                        <span  style="font-weight: 600; font-size: 13px; color: #fff; background-color: #a8b174;   padding: 4px 8px;">Processing</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                    </td>
+                </tr>
+            </table>
+        
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style=" background-color: #fff;">
+                <tr>
+                    <td style="padding: 50px 15px 50px;">
+                        <img src="./assets/images/step-img-v3.png" alt="" style="max-width: 600px; width: 100%;" class="img-des">
+                        <img src="./assets/images/step-img-r-v3.png" alt="" style="max-width: 191px; width: 100%;" class="img-res">
+                        <table border="0" cellpadding="0" cellspacing="0" align="right" width="100%">
+                                <tr>
+                                    <td style="text-align: center; padding: 40px 0px 0px;" align="center">
+                                        <a href="https://greenstonemedia.com/" style="text-decoration: none; color:#fff;" class="btn btn-g2">View order</a> 
+                                    </td>
+                                </tr>
+                            </table>
+                    </td>
+                </tr>
+                 
+            </table>
+        
+      
+      <!-- Pre footer Section -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#262626">
+        <tr>
+            <td style="text-align: center; padding: 26px 10px 26px;">
+                <p style="color:#ffffff;margin-bottom: 0;font-size: 14px;"> You can update your 
+                    <a href="#" style="text-decoration: underline; color: #ffffff;">preferences</a> or 
+                    <a  style="text-decoration: underline; color: #ffffff;" href="#page">unsubscribe</a> from this list</p>
+            </td>
+        </tr>
+    </table>
+    
+  <!-- Footer -->
+  <table id="footer" bgcolor="#686868" class="center" style="text-align: center;" border="0" cellpadding="0" cellspacing="0" width="100%">
+     
+
+    <tr>
+        <td valign="top" align="center" id="wrap_footer" style="width: 480px;max-width: 100%;margin-left: auto;margin-right: auto;display: inline-block;padding-top: 40px;padding-bottom:40px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="40%" id="" align="left">
+              <tr>
+                <td valign="top" align="left" style="padding:0 0 5px;">
+                    <a href="http://greenstonemedia.com">
+                        <img src="./assets/images/logo.png" alt="logo" width="70px" style="width: 70px;">
+                    </a>                  
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="socials">
+                        <tbody>
+                            <tr>
+                                <td valign="top" align="left" style="padding:0 0 5px;">
+                                    <a href="https://www.facebook.com/greenstonemedia"><img src="./assets/images/social-face.png" alt="facebook"></a>
+                                    <a href="https://twitter.com/greenstoneAVL"><img src="./assets/images/social-twitter.png" alt="twitter"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+              </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="60%" id="info_footer" align="right">
+                <tr>
+                    <td valign="top">
+                        <h5 style="color:#fff;margin-bottom: 2px;">Ty Hallock</h5>
+                        <p style="margin-bottom: 5px;"><strong>Lead Developer - Greenstone Media</strong></p>
+                        <p style="margin-bottom:0; ">
+                            <strong>p:</strong>	<a href="tel:828-209-8066" style="color:#808080;" >828-209-8066</a> <br>
+                            <strong>m:</strong> <a href="tel:828-281-1085" style="color:#808080;">828-281-1085</a> <br>
+                            <strong>a:</strong> <a href="https://maps.google.com/?q=90+Southside+Ave+Suite+300+Asheville+NC&amp;entry=gmail&amp;source=g" style="color:#808080;" >90 Southside Ave Suite 300 Asheville NC</a> <br>
+                            <strong>w:</strong>	<a href="http://greenstonemedia.com" target="_blank" style="color:#808080;">http://greenstonemedia.com</a> 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

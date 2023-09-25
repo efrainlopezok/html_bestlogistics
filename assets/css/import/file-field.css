@@ -1,0 +1,34 @@
+/* Custom input file */
+
+.dnd-upload {
+    background-color: #f3f5e9;
+    border: 2px dashed #bfc989;
+    border-radius: 4px;
+    position: relative;
+    padding: 10px;
+    padding-left: 28px;
+}
+.dnd-upload input[type="file"] {
+    display: none;
+}
+.dnd-upload p {
+    font-size: 0.892em;
+    line-height: 1.2em;
+    margin: 0;
+    text-align: center;
+}
+.dnd-upload .file-info {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+.dnd-upload a {
+    color: #32384f;
+    text-decoration: underline;
+}
+.dnd-upload >i {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #a8b174;
+    transform: translateY(-50%)
+}

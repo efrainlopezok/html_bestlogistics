@@ -1,0 +1,124 @@
+.notifications{
+    background-color:#fff ;
+    -webkit-box-shadow: 0 0.4rem 1rem rgba(0,0,0,.06);
+    -moz-box-shadow: 0 .4rem 1rem rgba(0,0,0,.06);
+    box-shadow: 0 0.4rem 1rem rgba(0,0,0,.06);
+    margin-bottom: 30px;
+}
+.notification-info {
+    padding: 15px 18px;
+    transition: background-color 0.25s;
+}
+.notification-info img {
+    height: 30px;	
+    width: 30px;	
+    border-radius: 10px;	
+    background-color: #D8D8D8;
+    margin-right: 13px !important;
+}
+.notification-info .media {
+    position: relative;
+}
+.notification-info .reaction-icon {
+    height: 12px;
+    width: 13.58px;
+    position: absolute;
+    top: 14px;
+    left: 22px;
+}
+.notification-info .reaction-icon i{
+    text-shadow: -1px 0px 2.5px rgb(230, 223, 223);
+}
+.notification-info .reaction-icon .fa-heart{
+    color: red;
+    font-size: 12px;
+}
+.notification-info .media-body {
+    line-height: 0.95em;
+}
+.notification-info h5 {
+    font-size: 0.92em;
+    line-height: 1em;
+    margin-bottom: 2px;
+}
+.notification-info time {
+    color: #3B4859;
+    font-size: 0.75em;	
+}
+.notification-info .toolbar a:not(:last-child) {
+    margin-right: 10px;
+}
+.notification-info:nth-child(even) {
+    background-color: #F4F4F4;
+}
+.notification-info:hover {
+    background-color: #e8ecd2;
+}
+.notification-info .toolbar a:not(:last-child) {
+    margin-right: 10px;
+}
+.notification-message {
+    color: #3B4859;
+    font-size: 90%;
+    line-height: 1rem;
+    margin: 0;
+    padding: 8px 19px 0 38px;
+}
+.notification-info .notif-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+}
+.notification-info .notif-icon i {
+    font-size: 1.2em;
+    line-height: 0.75em;
+}
+
+.btn-del {
+    position: relative;
+    padding: 1px;
+    top: 2px;
+    color: #FFFFFF !important;
+    font-size: 1.5rem;
+    line-height: 0.875rem;
+    text-align: center;
+    border: 1px solid #C14141;
+    border-radius: 15px;
+    background-color: #C14141;
+    width: 24px;
+    height: 24px;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(193,65,65,0.1);
+    -moz-box-shadow: 0 5px 10px 0 rgba(193,65,65,0.1);
+    box-shadow: 0 5px 10px 0 rgba(193,65,65,0.1);
+}
+.btn-del i {
+    font-size: 0.9375rem;
+    font-weight: bold;
+}
+.btn-del:hover {
+    color: #fff;
+}
+
+.notification-info .btn-del {
+    display: none;
+}
+.notification-info:hover .btn-del {
+    display: block;
+}
+.notification-info .btn-sm{
+    border-radius: 16px;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: normal;
+    line-height: 1em;
+    height: min-content;
+    padding: 8px;
+}
+@media (max-width: 500px) {
+    .toolbar{
+        margin-top: 15px;
+    }
+}

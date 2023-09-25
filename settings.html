@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- MAKE IT RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://demos.alkalab.com/woffice/allinone/xmlrpc.php">
+    <title>Dashboard - BestLogistics </title>
+    <link rel="dns-prefetch" href="//maps.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/import.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="inner-pad">
+            <div class="nav-logo">
+                <div class="logo-left">
+                    <img src="./assets/img/best-logistics-logo-inline-white.png" alt="Logo Image"> </a>
+                </div>
+                <span class="brand">BestLogistic Group<sup>®</sup></span>
+            </div>
+        </div>
+        
+        <ul class="dmain-menu">
+            <li>
+                <a href="./index.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </span> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="./orders.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-truck"></i>
+                    </span> Orders
+                </a>
+            </li>
+            <li>
+                <a href="./documents.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </span> 
+                    Documents
+                </a>
+            </li>
+            <li class="active">
+                <a href="./settings.html" class="nav-link"> 
+                    <span class="nav-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </span> 
+                    Settings
+                </a>
+            </li>
+            
+            <li>
+                <a href="notifications.html" class="nav-link"> 
+                    <span class="nav-icon"><i class="fas fa-bell"></i></span> 
+                    Notifications <span class="badge badge-secondary">4</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="inner-pad text-center">
+            <a href="javascript:;" class="btn btn-secondary d-block mb-2">Add LTL Order</a>
+            <a href="javascript:;" class="btn btn-secondary d-block">Add TL Order</a>
+        </div>
+    </nav>
+    
+    <div class="wrapper">
+        <header id="main-header" class="main-header">
+            <nav id="navbar" class="has_fixed_navbar animate-me" style="top: 0px;">
+                <div id="nav-left">
+                    <!-- NAVIGATION TOGGLE -->
+                    <div class="nav-left-l">
+                        <a href="javascript:void(0)" id="nav-trigger"><i class="fa fa-chevron-left"></i></a>
+                    </div>
+                    
+                    <!-- START LOGO -->
+                    <div id="nav-logo">
+                        <a href="./">
+                            <img src="./assets/img/best-logistics-logo-inline.png" alt="Logo Image"> </a>
+                        </div>
+                        
+                        <!-- USER INFORMATIONS -->
+                        <div id="nav-user" class="clearfix bp_is_active">
+                            <a href="javascript:void(0);" id="user-thumb">
+                                Hi <strong class="font-weight-bold">Joe</strong>!
+                                <img alt="" src="./assets/img/user.jpg" class="avatar avatar-96 photo" height="96" width="96">
+                            </a>
+                            
+                        </div>
+                    </div> <!-- /. nav-left -->
+                    
+                    <!-- EXTRA BUTTONS ABOVE THE SIDBAR -->
+                    <div id="nav-buttons" class="nav-buttons">
+                        <!-- SIDEBAR TOGGLE -->
+                        <a href="javascript:void(0)" id="nav-sidebar-trigger"><i class="fa fa-chevron-right" aria-haspopup="true" aria-hidden="true"></i></a>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" id="nav-notification-trigger" title="View your notifications" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="far fa-bell"></i>
+                                    <span class="badge badge-warning">4</span>
+                                </a>
+                                <!--  NOTIFICATIONS -->
+                                <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-lg" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-246px, 64px, 0px);">
+                                    <form>
+                                        <!--begin: Head -->
+                                        <div class="kt-head kt-head--skin-dark kt-head--fit-x kt-head--fit-b" style="background-image: url(./assets/img/dpdn-hero.jpg)">
+                                            <h3 class="kt-head__title">
+                                                User Notifications
+                                                &nbsp;
+                                                <span class="btn btn-success btn-sm btn-bold btn-font-md">23 new</span>
+                                            </h3>
+                                            
+                                            <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-success kt-notification-item-padding-x" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_notifications" role="tab" aria-selected="true">Alerts</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Events</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Logs</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--end: Head -->
+                                        
+                                        <div class="tab-content">
+                                            <div class="tab-pane active show" id="topbar_notifications_notifications" role="tabpanel">
+                                                <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll ps ps--active-y" data-scroll="true" data-height="300" data-mobile-height="200" style="height: 300px; overflow: hidden;">
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-chart-line text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                2 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-box text-info"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New customer is registered
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-chart-pie text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                Application has been approved
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-file-image text-warning"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New file has been uploaded
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                5 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="far fa-comment-dots tex-info"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New user feedback received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                8 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-life-ring text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                System reboot has been successfully completed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                12 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-map-marked-alt text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been placed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                15 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+                                                <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll ps" data-scroll="true" data-height="300" data-mobile-height="200" style="height: 300px; overflow: hidden;">
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-file-image text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New report has been received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                23 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-download text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                Finance report has been generated
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                25 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="far fa-chart-bar text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                2 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-user-check"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New customer is registered
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-thumbs-up text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                Application has been approved
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                3 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-file-upload text-warning"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New file has been uploaded
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                5 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="far fa-comment-dots tex-info"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New user feedback received
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                8 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-life-ring text-success"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                System reboot has been successfully completed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                12 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="kt-notification__item">
+                                                        <div class="kt-notification__item-icon">
+                                                            <i class="fas fa-map-marked-alt text-danger"></i>
+                                                        </div>
+                                                        <div class="kt-notification__item-details">
+                                                            <div class="kt-notification__item-title">
+                                                                New order has been placed
+                                                            </div>
+                                                            <div class="kt-notification__item-time">
+                                                                15 hrs ago
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="topbar_notifications_logs" role="tabpanel">
+                                                <div class="kt-grid kt-grid--ver" style="min-height: 200px;">
+                                                    <div class="kt-grid kt-grid--hor kt-grid__item kt-grid__item--fluid kt-grid__item--middle">
+                                                        <div class="kt-grid__item kt-grid__item--middle kt-align-center">
+                                                            All caught up!
+                                                            <br>No new notifications.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- ./ NOTIFICATIONS -->
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section id="main-content" class="main-content with-sidebar">
+                <aside id="right-sidebar" class="right-sidebar">
+                    
+                    <div class="intern-padding color-box">
+                        <ul class="arrow-list">
+                            <li><a href="">New Request</a></li>
+                            <li><a href="">Highlighted Carriers</a></li>
+                            <li><a href="">Shipping Map</a></li>
+                            <li><a href="">Freight Map</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="intern-padding">
+                        <h5>Suggested Carriers</h5>
+                        <img src="./assets/img/user.jpg" alt="" class="avatar-pic">
+                    </div>
+                    
+                    <div class="intern-padding color-box">
+                        <h5>How To</h5>
+                        <ul class="icon-list">
+                            <li>
+                                <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                                <a href="">How to integrate McLeod Logistics<span class="ml-2  badge badge-skyblue badge-pill">
+                                    <i class="fa fa-thumbs-up"></i> 5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                                <a href="">How to track freight with GPS<span class="ml-2  badge badge-skyblue badge-pill"><i
+                                    class="fa fa-thumbs-up"></i> 5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="l-icon"><i class="fas fa-question-circle"></i></span>
+                                <a href="">Using escalation and advanced scheduling<span class="ml-2  badge badge-skyblue badge-pill"><i
+                                    class="fa fa-thumbs-up"></i> 5</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="intern-padding box-title">
+                        <h5>Recent Activity</h5>
+                        <ul class="icon-list">
+                            <li>
+                                <span class="l-icon"><i class="far fa-calendar-alt"></i></span>
+                                <a href="#">Request has been dispatched from San Antonio</a>
+                            </li>
+                            <li>
+                                <span class="l-icon"><i class="far fa-calendar-alt"></i></span>
+                                <a href="#">Request has been Picked Up in Asheville, NC</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- /. right-sidebar -->
+                
+                <div id="left-content" class="left-content">
+                    
+                    <!-- START THE CONTENT CONTAINER -->
+                    <div class="content-container">
+                        <div class="content">
+                            <h2>Settings</h2>
+                            <!-- Settings -->
+                            <h5>General</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wrap-table">
+                                        <div class="row row-group">
+                                            <div class="col-md-5">
+                                                <span class="table-title">NAME</span>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row-large top-info">
+                                                    <div class="col-10">
+                                                        <span>Joe Doe</span>
+                                                    </div>
+                                                    <div class="col-2 action-box">
+                                                        <a href="javascrip:void(0);" class="link_action" data-click="">Edit</a>
+                                                    </div>
+                                                </div>
+                                                <div class="down-info hidden">
+                                                    <input type="text" name="name" value="Joe Doe">
+                                                    <div class="text-right pt-2">
+                                                        <a href="javascrip:void(0);" data-btn="" class="btn btn-primary-b mr-2">Cancel</a>
+                                                        <a href="javascrip:void(0);" class="btn btn-secondary">Save</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-group">
+                                            <div class="col-md-5">
+                                                <span class="table-title">COMPANY</span>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row-large top-info">
+                                                    <div class="col-10">
+                                                        <span>Global Logistics</span>
+                                                    </div>
+                                                    <div class="col-2 action-box">
+                                                        <a href="javascrip:void(0);" class="link_action" data-click="">Edit</a>
+                                                    </div>
+                                                </div>
+                                                <div class="down-info hidden">
+                                                    <input type="text" name="company" value="Global Logistics">
+                                                    <div class="text-right pt-2">
+                                                        <a href="javascrip:void(0);" data-btn="" class="btn btn-primary-b mr-2">Cancel</a>
+                                                        <a href="javascrip:void(0);" class="btn btn-secondary">Save</a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row row-group">
+                                            <div class="col-md-5">
+                                                <span class="table-title">TIMEZONE</span>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row-large top-info">
+                                                    <div class="col-10">
+                                                        <span>CST</span>
+                                                    </div>
+                                                    <div class="col-2 action-box">
+                                                        <a href="javascrip:void(0);" class="link_action" data-click="">Edit</a>
+                                                    </div>
+                                                </div>
+                                                <div class="down-info hidden">
+                                                    <div class="timezone">
+                                                        <select class="form-control" id="timezone">
+                                                            <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+                                                           <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                                                           <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                                                           <option value="US/Alaska">(GMT-09:00) Alaska</option>
+                                                           <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                                                           <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+                                                           <option value="US/Arizona">(GMT-07:00) Arizona</option>
+                                                           <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                                           <option value="US/Mountain">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                                                           <option value="America/Managua">(GMT-06:00) Central America</option>
+                                                           <option value="US/Central">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                                                           <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                                           <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                                                           <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                                           <option value="US/Eastern">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                                           <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+                                                           <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+                                                           <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+                                                           <option value="America/Manaus">(GMT-04:00) Manaus</option>
+                                                           <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                                                           <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+                                                           <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                                                           <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+                                                           <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                                                           <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                                                           <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                                                           <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                                                           <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                                                           <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="text-right pt-2">
+                                                        <a href="javascrip:void(0);" data-btn="" class="btn btn-primary-b mr-2">Cancel</a>
+                                                        <a href="javascrip:void(0);" class="btn btn-secondary">Save</a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row row-group">
+                                            <div class="col-md-5">
+                                                <span class="table-title">PASSWORD</span>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row-large top-info">
+                                                    <div class="col-10">
+                                                        <span>**************</span>
+                                                    </div>
+                                                    <div class="col-2 action-box">
+                                                        <a href="javascrip:void(0);" class="link_action" data-click="">Edit</a>
+                                                    </div>
+                                                </div>
+                                                <div class="down-info hidden">
+                                                    <label for="">Password</label>
+                                                    <input type="password" name="password" value="Pass!wOr0">
+                                                    <div class="char-content">
+                                                        <p class="char checked">At least 8 characters</p>
+                                                        <p class="char no-checked">At least one special character (e.g. !, &amp;, #, etc.)</p>
+                                                        <p class="char no-checked">At least one number</p>
+                                                    </div>
+                                                    <label for="" class="mt-3">Confirm Password</label>
+                                                    <input type="password" name="password_confirm" value="Pass!wOr0">
+                                                    <div class="text-right pt-2">
+                                                        <a href="javascrip:void(0);" data-btn="" class="btn btn-primary-b mr-2">Cancel</a>
+                                                        <a href="javascrip:void(0);" class="btn btn-secondary">Save</a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Global Notifications</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wrap-table">
+                                        <div class="row row-group">
+                                            <div class="col-md-5">
+                                                <span class="table-title">Preferred method</span>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row-large top-info">
+                                                    <div class="col-10">
+                                                        <span>Email</span>
+                                                    </div>
+                                                    <div class="col-2 action-box">
+                                                        <a href="javascrip:void(0);" class="link_action" data-click>Edit</a>
+                                                    </div>
+                                                </div>
+                                                <div class="down-info hidden">
+                                                    <select name="notification-email" id="notification_email">
+                                                        <option value="email">Email</option>
+                                                        <option value="sms">SMS</option>
+                                                    </select>
+                                                    <div class="text-right pt-2">
+                                                        <a href="javascrip:void(0);" data-btn class="btn btn-primary-b mr-2">Cancel</a>
+                                                        <a href="javascrip:void(0);" class="btn btn-secondary">Save</a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row row-group">
+                                            <div class="col-md-5">
+                                                <span class="table-title">I want to receive notifications?
+                                                </span>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row-large top-info">
+                                                    <div class="col-10">
+                                                        <span>No</span>
+                                                    </div>
+                                                    <div class="col-2 action-box">
+                                                        <a href="javascrip:void(0);" class="link_action" data-click>Edit</a>
+                                                    </div>
+                                                </div>
+                                                <div class="down-info hidden">
+                                                    <div class="input-radio">
+                                                        <input type="radio" name="invite1" id="notif_enabled" value="notif_receive" >
+                                                        <label for="notif_enabled">Yes</label>
+
+                                                        <input type="radio" name="invite1" id="notif_disabled" value="notif_receive1" checked>
+                                                        <label for="notif_disabled">No</label>
+                                                    </div>
+                                                    <div class="text-right pt-2">
+                                                        <a href="javascrip:void(0);" data-btn class="btn btn-primary-b mr-2">Cancel</a>
+                                                        <a href="javascrip:void(0);" class="btn btn-secondary">Save</a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Orders</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="wrap-table">
+                                        <div class="row row-group">
+                                            <div class="col-md-5">
+                                                <span class="table-title">I want to receive notifications for this order?</span>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row-large top-info">
+                                                    <div class="col-10">
+                                                        <span>No</span>
+                                                    </div>
+                                                    <div class="col-2 action-box">
+                                                        <a href="javascrip:void(0);" class="link_action" data-click>Edit</a>
+                                                    </div>
+                                                </div>
+                                                <div class="down-info hidden">
+                                                    <div class="input-radio">
+                                                        <input type="radio" name="invite" id="notif_enabled1" value="notif_receive" >
+                                                        <label for="notif_enabled1">Yes</label>
+
+                                                        <input type="radio" name="invite" id="notif_disabled2" checked value="notif_receive">
+                                                        <label for="notif_disabled2">No</label>
+                                                    </div>
+                                                    <div class="text-right pt-2">
+                                                        <a href="javascrip:void(0);" data-btn class="btn btn-primary-b mr-2">Cancel</a>
+                                                        <a href="javascrip:void(0);" class="btn btn-secondary">Save</a>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /. CONTENT -->
+                    </div>
+                    <!-- /. CONTENT CONTAINER -->
+                    <div id="scroll-top-container" class="scroll-top-container">
+                        <a href="#main-header" class="scroll-to">
+                            <i class="fa fa-arrow-circle-up"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+                <!-- /. left-content  -->
+            </section>
+            <!-- /. main-content -->
+        </div>
+        <!-- /. wrapper -->
+        <footer class="main-footer">
+            <div class="widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 widget">
+                            <h3>&nbsp;</h3>
+                            <img src="assets/img/best-logistics-logo-inline-white.png" width="280px" class="mb-2" alt="logo">
+                            <p >Best Logistics Group.</p>
+                        </div>
+                        
+                        <div class="col-lg-4 widget">
+                            <h3>How To</h3>
+                            <ul class="arrow-list-footer">
+                                <li>
+                                    <a href=""> How to integrate McLeod Logistics
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""> How to track freight with GPS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""> Using escalation and advanced scheduling
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-4 widget">
+                            <h3>Quick Navigation</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">New Request</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Highlighted Carriers</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Shipping Map</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Freight Map </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2019 all rights reserved. <a href="javascript:;"><strong>Best Logistics Group</strong></a>.</p>
+            </div>
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <link rel="stylesheet" href="./assets/css/all.css">
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/masonry.pkgd.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+    </body>
+    
+    </html>

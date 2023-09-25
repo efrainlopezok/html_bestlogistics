@@ -1,0 +1,11 @@
+
+@media screen and (min-width: 1170px) {
+    .row-layout-370 >div[class*="col-"]:first-child {
+        flex: 0 0 calc(100% - 400px);
+        max-width: calc(100% - 400px);
+    }
+    .row-layout-370 >div[class*="col-"]:nth-child(2) {
+        flex: 0 0 400px;
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,64 @@
+@media (max-width: 1060px) {
+   .multi-steps li.is-active .text-content:before{
+      right: auto;
+      left: 7px;
+   }
+   .multi-steps li .text-content:before{
+      right: auto;
+      left: 6px;
+   }
+   .multi-steps .badge{
+      right: auto;
+      left: -9px;
+   }
+   .multi-steps li:not(:last-child ) .badge.badge-right{
+      right: auto;
+      top: 50%;
+      transform: translate(0,50%);
+   }
+}
+@media (max-width: 991px) {
+   .featuredbox.centered .pagetitle>h1 {
+      font-size: calc(1em + 3vw);
+      padding: 0 10px;
+   }
+   .featuredbox .pagetitle {
+      padding: 0 15px;
+   }
+   .box-shipping {
+      padding: 15px;
+   }
+   .modal{
+      padding-right: 0 !important;
+   }
+   /*------------------------------------  Tabs  */
+   .content-tab .nav-link {
+      font-size: 15px;
+      padding: 6px 0;
+   }
+   .content-tab .nav-link.active {
+      border-bottom: 3px solid;
+   }
+   .content-container .intern-padding {
+      padding: 15px 20px;
+   }
+
+}
+
+@media (max-width: 500px){
+   .new-shipment .edit{
+      padding-bottom: 20px;
+      float: initial;
+   }
+   .new-shipment h4 {
+      padding-bottom: 10px;
+   }
+}
+@media (max-width: 345px) {
+   .content-tab nav{
+      overflow-x: auto;
+   }
+   .nav-tabs{
+      width: 250px;
+   }
+}

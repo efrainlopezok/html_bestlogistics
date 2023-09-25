@@ -1,0 +1,8 @@
+.wrapper-sm {
+    max-width: 420px;
+}
+
+.wrapper-md {
+    max-width: 100%;
+    width: 980px;
+}

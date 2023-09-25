@@ -1,0 +1,72 @@
+.wrap-table{
+	-webkit-box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 28px;
+    margin-bottom: 30px;
+}
+.wrap-table .row-group .action-box {
+    text-align: right;
+    padding-right: 0;
+}
+
+.wrap-table .row-group .row-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.wrap-table .row-group{
+	margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+.wrap-table .row-group:first-child {
+    padding-top: 0;
+}
+.wrap-table .row-group:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.wrap-table .row-group >div[class*="col-"]:first-child {
+    padding-left: 0;
+}
+.wrap-table .row-group >div[class*="col-"]:last-child {
+    padding-right: 0;
+}
+
+.wrap-table .link_action {
+    color: #a8b174;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: normal;
+}
+.wrap-table span{
+	font-size: 14px;
+	font-weight: 400;
+}
+.wrap-table .table-title{
+	text-transform: uppercase;
+}
+
+.row-group .btn{
+	color: #fff;
+}
+.wrap-table select{
+	height: 48px;
+}
+.wrap-table label{
+	margin-bottom: 0;
+	font-size: 14px;
+}
+.wrap-table.border-table .row-group .action-box {
+    text-align: right;
+    padding-right: 0;
+}
